@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "5b557221709b04e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "a540bdd6870ad095",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32d1ba6e8753beff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "October Forever.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8fffc77401297d13",
+    "type": "split",
+    "children": [
+      {
+        "id": "2402d28a0905f889",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ba07bf8bb4f4bf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fc5f743237ad4c66",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dc0d71df17b8456d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2cc83e85e81e9a5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8652d4f019d940bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08c54f540a54fc31",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1e9ba1525d76b770",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8c9ed429ff3c5228",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9ece9062a94084a5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Music AI in 2023.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "notes-merger:Notes Merger": false
+    }
+  },
+  "active": "7ba07bf8bb4f4bf2",
+  "lastOpenFiles": [
+    "October Forever.md",
+    "Music AI in 2023.md",
+    "The Sky Seems Closer.md",
+    "Skeptic.md",
+    "Skeletons.md",
+    "Singles.md",
+    "Side Mirror.md",
+    "Night Terrors.md",
+    "Into The Past.md",
+    "Epilogues II.md",
+    "Epilogues.md",
+    "Albums/Epilogues.md",
+    "Driveways Discography.md",
+    "Albums",
+    "Albums/Singles.md",
+    "Albums/Skeptic.md",
+    "Albums/The Sky Seems Closer.md",
+    "Albums/Skeletons.md",
+    "Albums/Side Mirror.md",
+    "Albums/October Forever.md",
+    "Albums/Night Terrors.md",
+    "Albums/Into The Past.md",
+    "Albums/Epilogues II.md",
+    "The Sky Seems Closer-merged.md",
+    "Into The Past/Into The Past Album.md",
+    "Epilogues II/Epilogues II Album.md",
+    "Epilogues/456.md",
+    "Misc",
+    "Skeptic",
+    "Skeletons",
+    "Side Mirror",
+    "October Forever",
+    "Night Terrors",
+    "Into The Past",
+    "Epilogues II",
+    "Epilogues"
+  ]
+}
