@@ -164,6 +164,7 @@
   },
   "active": "58302d2146f928f7",
   "lastOpenFiles": [
+    "README.md",
     "audiosilence.py",
     "Scripts/ScriptBU/audiosilence.bak4",
     "audiosilence.bak4",
@@ -176,7 +177,6 @@
     "AudioSilence.md",
     "Scripts/audiosilence.py",
     "Scripts/audiosilence.bak2",
-    "silence_detection.log",
     "Resources/PythonInMusic.md",
     "Scripts/audio_analysis_and_organization.md",
     "Development/ProjectAudio Development.md",
