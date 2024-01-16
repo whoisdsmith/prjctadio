@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "58302d2146f928f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AudioSilence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AudioSilence.md",
+                "file": "Resources/Python for Scientific Audio.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AudioSilence.md",
+                "file": "Resources/Python for Scientific Audio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AudioSilence.md"
+                "file": "Resources/Python for Scientific Audio.md"
               }
             }
           }
@@ -162,22 +149,22 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "58302d2146f928f7",
+  "active": "32d1ba6e8753beff",
   "lastOpenFiles": [
+    "silence_detection.log",
+    "README.md",
+    "AudioSilence.md",
     "Scripts/ScriptBU/audiosilence - Copy2.py",
     "as.py",
     "audiosilence - Copy2.py",
     "audiosilence - Copy.py",
     "Scripts/ScriptBU/audiosilence - Copy.py",
-    "README.md",
     "audiosilence.py",
     "Scripts/ScriptBU/audiosilence.bak4",
     "audiosilence.bak4",
     "audiosilence.bak3",
     "Scripts/ScriptBU/audiosilence.bak3",
-    "Scripts/ScriptBU/audiosilence.bak",
     "Resources/Python for Scientific Audio.md",
-    "AudioSilence.md",
     "Resources/PythonInMusic.md",
     "Scripts/audio_analysis_and_organization.md",
     "Development/ProjectAudio Development.md",

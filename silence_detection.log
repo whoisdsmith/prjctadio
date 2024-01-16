@@ -1,19 +1,20 @@
-2024-01-16 09:55:19,984 - INFO - Starting to scan for silence in MP3 files.
-2024-01-16 10:12:41,312 - INFO - Starting to scan for silence in MP3 files.
-2024-01-16 10:19:13,381 - INFO - Starting to scan for silence in MP3 files.
-2024-01-16 10:22:53,973 - INFO - Starting to scan for silence in MP3 files.
-2024-01-16 10:25:14,830 - INFO - Scan and move complete.
-2024-01-16 10:33:57,007 - INFO - Starting to scan for silence in MP3 files.
-2024-01-16 10:35:13,099 - INFO - No action required for None or file analysis failed.
-2024-01-16 10:35:36,046 - INFO - No action required for None or file analysis failed.
-2024-01-16 10:35:55,111 - INFO - No action required for None or file analysis failed.
-2024-01-16 10:36:04,407 - INFO - No action required for None or file analysis failed.
-2024-01-16 10:36:04,407 - INFO - Scan and move complete.
-2024-01-16 11:23:30,697 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
-2024-01-16 11:23:30,761 - INFO - No action required for None (file moved or no silence detected).
-2024-01-16 11:23:50,595 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
-2024-01-16 11:23:50,674 - INFO - No action required for None (file moved or no silence detected).
-2024-01-16 11:24:31,315 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
-2024-01-16 11:24:31,332 - INFO - No action required for None (file moved or no silence detected).
-2024-01-16 11:24:44,494 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
-2024-01-16 11:24:44,494 - INFO - No action required for None (file moved or no silence detected).
+2024-01-16 11:49:38,341 - INFO - No silence detected in E:\Instrumental Library\From iTunes\(FREE FOR PROFIT) Sad Guitar Instrum.mp3.
+2024-01-16 11:50:04,088 - INFO - No silence detected in E:\Instrumental Library\From iTunes\(FREE FOR PROFIT) The Weeknd Type Be.mp3.
+2024-01-16 11:50:43,252 - INFO - No silence detected in E:\Instrumental Library\From iTunes\(FREE FOR PROFIT) Dark x Melodic Typ.mp3.
+2024-01-16 11:50:53,767 - INFO - No silence detected in E:\Instrumental Library\From iTunes\(FREE FOR PROFIT) Hard Epic Melodic.mp3.
+2024-01-16 11:51:29,287 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Dreamy.mp3.
+2024-01-16 11:51:47,616 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Burn After Reading.mp3.
+2024-01-16 11:52:16,697 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Blossom.mp3.
+2024-01-16 11:52:31,750 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Introspective.mp3.
+2024-01-16 11:52:46,006 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Fight Yourself.mp3.
+2024-01-16 11:54:00,657 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\It's About You.mp3.
+2024-01-16 11:54:11,258 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Heart and Panic.mp3.
+2024-01-16 11:54:31,829 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Life of a Six.mp3.
+2024-01-16 11:54:40,682 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Lonely Habits.mp3.
+2024-01-16 11:54:53,626 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Math Funk.mp3.
+2024-01-16 11:55:51,182 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\My First Mortgage.mp3.
+2024-01-16 11:56:03,302 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Mad for Sleeping In.mp3.
+2024-01-16 11:56:10,457 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Personal Best on Harbour Passage.mp3.
+2024-01-16 11:57:23,689 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\Tactical Terry.mp3.
+2024-01-16 11:57:24,704 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\When am I supposed to do laundry.mp3.
+2024-01-16 11:57:35,698 - INFO - No silence detected in E:\Instrumental Library\Math Rock Instrumentals\You Can Go Away Now.mp3.

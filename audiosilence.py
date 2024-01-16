@@ -77,7 +77,7 @@ def file_exists(file_path):
 def file_analysis(file):
     if not file_exists(file):
         logging.warning(f"File {file} not found.")
-        return None, None, None
+        return 'not_found', None, None
     try:
         # Calculate file checksum
         checksum = get_file_checksum(file)
@@ -85,24 +85,30 @@ def file_analysis(file):
         # Skip processing if file has been processed and is unchanged
         if file in processed_files and processed_files[file] == checksum:
             logging.info(f"Skipping {file}, already processed and unchanged.")
-            return None, None, None
+            return 'unchanged', None, None
         
         # Load the audio file
         try:
             audio = AudioSegment.from_file(file, format="mp3")
         except Exception as e:
             logging.error(f"Error loading {file}: {e}")
-            return None, None, None
+            return 'load_error', None, None
         
         # Check for non-silent parts
-        nonsilent_parts = detect_nonsilent(audio, min_silence_len=min_silence_length, silence_thresh=silence_threshold)
+        nonsilent_parts = detect_nonsilent(
+            audio,
+            min_silence_len=min_silence_length,
+            silence_thresh=silence_threshold
+        )
+        
         # If the first non-silent part starts after 0, there's silence at the beginning
         if nonsilent_parts and nonsilent_parts[0][0] > 0:
-            return file, nonsilent_parts[0][0], checksum
-        return None, None, None
+            return 'success', file, checksum
+        
+        return 'no_silence', None, None
     except Exception as e:
         logging.error(f"Error processing {file}: {e}")
-        return None, None, None
+        return 'processing_error', None, None
 
 def move_file(file, checksum):
     try:
@@ -122,18 +128,23 @@ def process_files(files):
         for future in tqdm(concurrent.futures.as_completed(future_to_file), total=len(files), desc="Analyzing MP3 files", unit="file"):
             file = future_to_file[future]
             try:
-                result = future.result()
-                if result:
-                    file, silence_duration, checksum = result
-                    if move_file(file, checksum):
+                status, file_to_move, checksum = future.result()
+                if status == 'success':
+                    if move_file(file_to_move, checksum):
                         with open(processed_files_db, 'a') as db:
-                            db.write(f"{file},{checksum}\n")
-                    else:
-                        logging.info(f"No action required for {file} (file moved or no silence detected).")
-                else:
-                    logging.info(f"No result for {file} (silence not detected or file analysis failed).")
+                            db.write(f"{file_to_move},{checksum}\n")
+                elif status == 'no_silence':
+                    logging.info(f"No silence detected in {file}.")
+                elif status == 'not_found':
+                    logging.warning(f"File {file} not found for analysis.")
+                elif status == 'load_error':
+                    logging.error(f"Error loading {file}.")
+                elif status == 'processing_error':
+                    logging.error(f"Error processing {file}.")
+                elif status == 'unchanged':
+                    logging.info(f"File {file} unchanged and previously processed.")
             except Exception as e:
-                logging.error(f"Error with file {file}: {e}")
+                logging.error(f"Error with processing future for file {file}: {e}")
 
 # Main execution code
 def main():
