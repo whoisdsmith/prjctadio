@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "32d1ba6e8753beff",
+            "id": "5fa601bc3ac223a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Python for Scientific Audio.md",
+                "file": "Pre-Processing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb8d872e1973496c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resources/Python Audio Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resources/Python for Scientific Audio.md",
+                "file": "Resources/Python Audio Tools.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resources/Python for Scientific Audio.md",
+                "file": "Resources/Python Audio Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resources/Python for Scientific Audio.md"
+                "file": "Resources/Python Audio Tools.md"
               }
             }
           }
@@ -149,8 +162,12 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "32d1ba6e8753beff",
+  "active": "7ba07bf8bb4f4bf2",
   "lastOpenFiles": [
+    "Pre-Processing.md",
+    "Resources/Python Audio Tools.md",
+    "Articles/Music AI in 2023.md",
+    "Resources/Python for Scientific Audio.md",
     "silence_detection.log",
     "README.md",
     "AudioSilence.md",
@@ -163,15 +180,12 @@
     "Scripts/ScriptBU/audiosilence.bak4",
     "audiosilence.bak4",
     "audiosilence.bak3",
-    "Scripts/ScriptBU/audiosilence.bak3",
-    "Resources/Python for Scientific Audio.md",
     "Resources/PythonInMusic.md",
     "Scripts/audio_analysis_and_organization.md",
     "Development/ProjectAudio Development.md",
     "ProjectAudioOrgChart.md",
     "ProjectAudio Projects.md",
     "Development/ProjectAudio.md",
-    "Articles/Music AI in 2023.md",
     "Development/Audiotrim.md",
     "Analysis/Audio Analysis.md",
     "October Forever.md",
@@ -185,7 +199,6 @@
     "Epilogues II.md",
     "Epilogues.md",
     "Albums/Epilogues.md",
-    "Driveways Discography.md",
-    "Albums/Singles.md"
+    "Driveways Discography.md"
   ]
 }
