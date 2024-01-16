@@ -28,22 +28,10 @@ min_silence_length = args.min_silence_length
 log_file = "C:\\Users\\whois\\Documents\\prjctadio\\silence_detection.log"
 processed_files_db = "processed_files.txt"
 
-# Set up logging to both file and console
+# Set up logging
 logging_level = getattr(logging, args.log_level.upper(), None)
-log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-
-# File handler
-file_handler = logging.FileHandler(log_file)
-file_handler.setLevel(logging_level)
-file_handler.setFormatter(log_formatter)
-
-# Console handler
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging_level)  # or use logging.INFO to always print to console
-console_handler.setFormatter(log_formatter)
-
-# Configure the root logger
-logging.basicConfig(level=logging_level, handlers=[file_handler, console_handler])
+logging.basicConfig(filename=log_file, level=logging_level,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Create the destination directory if it doesn't exist
 if not os.path.exists(destination_directory):
@@ -107,8 +95,6 @@ def process_files(files):
                 move_file(file)
                 with open(processed_files_db, 'a') as db:
                     db.write(f"{file},{checksum}\n")
-            else:
-                logging.info(f"No action required for {file} or file analysis failed.")
 
 # Start the process
 logging.info("Starting to scan for silence in MP3 files.")
