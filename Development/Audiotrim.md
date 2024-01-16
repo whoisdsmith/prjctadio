@@ -1,3 +1,5 @@
+# Audiotrim
+
 Sure! I can help you with that. Let's break down your problem into smaller subproblems and solve each one step by step.
 
 Subproblem 1: Analyzing audio silence at the start of each track
@@ -66,7 +68,8 @@ print("Silence removed successfully!")
 ```
 
 File Visualization:
-```
+
+```python
 - analyze_mp3_folder
   |-- main.py
   |-- utils

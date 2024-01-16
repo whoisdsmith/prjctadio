@@ -420,7 +420,7 @@ Your technical stack choices are solid and align well with the requirements of t
 Before extracting meaningful information from audio files, it's essential to standardize the format and quality of these files to ensure consistency across the analyses. Here's what typically happens during preprocessing:
 
 - **Format Conversion**: Convert audio files to a common format like WAV because it's a lossless format, which means it has not been compressed and retains all of the original data. This is important for analysis because no information is lost.
-  
+
 - **Sampling Rate Normalization**: Make sure all audio files have the same sampling rate. The sampling rate defines how many samples per second are taken from a continuous signal to make a discrete signal. For audio CD quality, this is typically 44.1 kHz.
 
 - **Mono Conversion**: Convert stereo tracks to mono. Many audio analysis tasks do not require stereo information, and working in mono can reduce computational complexity.
@@ -438,7 +438,7 @@ Now let's look at each feature you want to extract:
 Detecting the key signature of a song is about finding the tonic (the root note) and mode (major or minor) that best represent the tonality of the music. Here's how it might be done:
 
 - **Chroma Feature Extraction**: Compute a chromagram from the audio signal, which is a representation of the energy present in each of the 12 different pitch classes (C, C#, D, etc.).
-  
+
 - **Key Detection Algorithm**: Using the chromagram, apply an algorithm to estimate the key. This could be a simple correlation with template key profiles or a more sophisticated machine learning model.
 
 Example code using `librosa` to estimate the key:
@@ -458,7 +458,7 @@ print(f"Estimated Key: {key}")
 BPM (beats per minute) detection is about finding the tempo of the track, which is the speed at which it is played:
 
 - **Onset Detection**: Identify moments in the audio where beats are likely to occur.
-  
+
 - **Tempo Estimation**: Use the timing of these onsets to estimate the tempo of the piece.
 
 The code snippet you provided is a straightforward example of using `librosa` to estimate the BPM.
@@ -468,7 +468,7 @@ The code snippet you provided is a straightforward example of using `librosa` to
 The time signature of a piece of music defines how many beats are in each measure and which note value constitutes one beat:
 
 - **Beat Tracking**: First, detect the beats in the audio signal.
-  
+
 - **Pattern Recognition**: Analyze the pattern of strong and weak beats to infer the time signature.
 
 Detecting the time signature automatically can be complex and may not be as reliable as other features without a more sophisticated model.
@@ -478,11 +478,11 @@ Detecting the time signature automatically can be complex and may not be as reli
 To automate the classification of the genre, you'll need to extract a variety of features that are relevant to the genre and then apply a classification algorithm:
 
 - **MFCCs (Mel-frequency cepstral coefficients)**: Capture the timbral aspects of the audio signal.
-  
+
 - **Chroma Features**: Can give information about the harmonic content.
-  
+
 - **Spectral Contrast**: Looks at the difference in amplitude between peaks and valleys in the spectrum, which can be indicative of genre.
-  
+
 - **Zero-crossing Rate**: The rate at which the signal changes sign can be indicative of the amount of noise or percussion in a track, which can be useful for genre classification.
 
 You would then feed these features into a machine learning model that has been trained to classify genres based on these feature sets. Here's a simplified example of how you might start this process:
@@ -536,9 +536,9 @@ Keep in mind that genre classification is a high-level task that involves signif
 Audio fingerprinting is a fascinating area of audio processing that allows for the identification and matching of audio files based on their content. Here's how it generally works:
 
 - **Feature Extraction**: The audio is processed to extract distinctive features, which represent the audio in a compact form. These features should be robust to changes in audio quality, encoding, and other transformations.
-  
-- **Fingerprint Generation**: These features are then used to create a fingerprint, a unique identifier for the audio. 
-  
+
+- **Fingerprint Generation**: These features are then used to create a fingerprint, a unique identifier for the audio.
+
 - **Database Matching**: The generated fingerprint is compared with a database of known fingerprints to find matches.
 
 ### Using AcoustID
@@ -546,9 +546,9 @@ Audio fingerprinting is a fascinating area of audio processing that allows for t
 AcoustID is a service that uses the Chromaprint algorithm to create fingerprints. Here's a high-level overview of how you might use it:
 
 - **Fingerprint Calculation**: Use `chromaprint` to analyze the audio and create a fingerprint.
-  
+
 - **Database Query**: Send this fingerprint to the AcoustID database to find a matching track ID.
-  
+
 - **Metadata Retrieval**: Use the track ID to retrieve metadata associated with the matched audio file (if it exists in the database).
 
 Here's a Python example using the `pyacoustid` library:
@@ -590,7 +590,7 @@ To analyze the structure of a song, you typically need to:
 Here's a simplified example of how you might approach this task using machine learning:
 
 - **Feature Extraction**: Use `librosa` to extract features like MFCCs, chroma features, and spectral contrast over short time frames across the song.
-  
+
 - **Segmentation Algorithm**: Use an algorithm like k-means clustering to group similar frames together, or employ a more sophisticated algorithm like Structural Features (SF) or Temporal Structural Features (TSF).
 
 - **Model Training**: If you have labeled data, you could train a supervised model. For example, a CNN or an RNN could learn to recognize patterns associated with different song parts.
@@ -658,7 +658,7 @@ file_metadata = get_metadata('path_to_audio_file.mp3')
 
 ### Organize Files into Directory Structure
 
-Once you have the metadata, you can use it to organize the files. The directory structure is typically organized by artist, album, and track number. However, in this example, you're organizing by detected key signatures. 
+Once you have the metadata, you can use it to organize the files. The directory structure is typically organized by artist, album, and track number. However, in this example, you're organizing by detected key signatures.
 
 Using Python's `os` and `shutil` libraries, you can create directories and move files, as shown in your provided code snippet. If you want to organize files by multiple metadata attributes, you might create nested directories.
 
@@ -770,7 +770,7 @@ file_metadata = get_metadata('path_to_audio_file.mp3')
 
 ### Organize Files into Directory Structure
 
-Once you have the metadata, you can use it to organize the files. The directory structure is typically organized by artist, album, and track number. However, in this example, you're organizing by detected key signatures. 
+Once you have the metadata, you can use it to organize the files. The directory structure is typically organized by artist, album, and track number. However, in this example, you're organizing by detected key signatures.
 
 Using Python's `os` and `shutil` libraries, you can create directories and move files, as shown in your provided code snippet. If you want to organize files by multiple metadata attributes, you might create nested directories.
 

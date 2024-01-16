@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/PythonInMusic.md",
+                "file": "Resources/Python for Scientific Audio.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58302d2146f928f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AudioSilence.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resources/PythonInMusic.md",
+                "file": "AudioSilence.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resources/PythonInMusic.md",
+                "file": "AudioSilence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resources/PythonInMusic.md"
+                "file": "AudioSilence.md"
               }
             }
           }
@@ -149,24 +162,30 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "7ba07bf8bb4f4bf2",
+  "active": "58302d2146f928f7",
   "lastOpenFiles": [
-    "Resources",
+    "audiosilence.py",
+    "Scripts/ScriptBU/audiosilence.bak4",
+    "audiosilence.bak4",
+    "audiosilence.bak3",
+    "Scripts/ScriptBU/audiosilence.bak3",
+    "Scripts/ScriptBU/audiosilence.bak",
+    "Scripts/ScriptBU",
+    "audiosilence.bak2",
     "Resources/Python for Scientific Audio.md",
+    "AudioSilence.md",
+    "Scripts/audiosilence.py",
+    "Scripts/audiosilence.bak2",
+    "silence_detection.log",
     "Resources/PythonInMusic.md",
-    "PythonInMusic.md.crdownload",
     "Scripts/audio_analysis_and_organization.md",
     "Development/ProjectAudio Development.md",
     "ProjectAudioOrgChart.md",
     "ProjectAudio Projects.md",
     "Development/ProjectAudio.md",
     "Articles/Music AI in 2023.md",
-    "Articles",
     "Development/Audiotrim.md",
     "Analysis/Audio Analysis.md",
-    "Development",
-    "Scripts",
-    "Analysis",
     "October Forever.md",
     "The Sky Seems Closer.md",
     "Skeptic.md",
@@ -179,13 +198,7 @@
     "Epilogues.md",
     "Albums/Epilogues.md",
     "Driveways Discography.md",
-    "Albums",
     "Albums/Singles.md",
-    "Albums/Skeptic.md",
-    "Albums/The Sky Seems Closer.md",
-    "Misc",
-    "Skeptic",
-    "Skeletons",
-    "Side Mirror"
+    "Albums/Skeptic.md"
   ]
 }

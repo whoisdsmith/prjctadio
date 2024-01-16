@@ -1,4 +1,4 @@
-# Music AI in 2023: a database of tools - Music Ally
+# Music AI in 2023: a Database of Tools - Music Ally
 
 ---
 
@@ -8,22 +8,21 @@ It almost feel superfluous to say it, but 2023 has unequivocally been The Year O
 
 While AI will change the way everyone works in the industry, the segment of tools that has grabbed the headlines are the music creation and analysis AI platforms – of which there are already a significant number, all promising revolution and innovation.
 
-To help you navigate this particular space, we’ve published two useful sets of data, below, in the form of an interactive [toolboard](https://musically.com/2023/12/19/music-ai-in-2023-a-database-of-tools/#toolboard) and a [database](https://musically.com/2023/12/19/music-ai-in-2023-a-database-of-tools/#database), to help clarify and contextualise the many AI tools available. They range from consumer-focussed music-generation platforms, to music production tools and stem-separation plugins, and beyond.
+To help you navigate this particular space, we've published two useful sets of data, below, in the form of an interactive [toolboard](https://musically.com/2023/12/19/music-ai-in-2023-a-database-of-tools/#toolboard) and a [database](https://musically.com/2023/12/19/music-ai-in-2023-a-database-of-tools/#database), to help clarify and contextualise the many AI tools available. They range from consumer-focussed music-generation platforms, to music production tools and stem-separation plugins, and beyond.
 
-We’re grateful to David Stammer, Digital Innovation Project Manager at [Popakademie](http://www.popakademie.de/) Baden-Württemberg, a popular music and music business university in Mannheim, and research student Nils Pastor for providing these resources. Stammer, as part of their [Smix Lab](https://www.popakademie.de/en/studium/studieren-an-der-popakademie/smix-lab/), has authored a whitepaper (in German) that expands on his investigation into the music AI space – [you can read it here](https://www.popakademie.de/media/?file=889_popakademiedigital_06_generative_ki_im_musikbusiness_stammer2023.pdf).
-
----
-
-### AI music toolboard
-
-Below is a toolboard which shows various creative music AI tools, grouped by category and positioned in relation to their ease of use, human interactivity and the quality of the AI’s output. You can zoom in, pan around and click on each tool to explore more – (we recommend switching to full screen mode if you really want to get stuck in.)
+We're grateful to David Stammer, Digital Innovation Project Manager at [Popakademie](http://www.popakademie.de/) Baden-Württemberg, a popular music and music business university in Mannheim, and research student Nils Pastor for providing these resources. Stammer, as part of their [Smix Lab](https://www.popakademie.de/en/studium/studieren-an-der-popakademie/smix-lab/), has authored a whitepaper (in German) that expands on his investigation into the music AI space – [you can read it here](https://www.popakademie.de/media/?file=889_popakademiedigital_06_generative_ki_im_musikbusiness_stammer2023.pdf).
 
 ---
 
-### Music AI platform database
+## AI Music Toolboard
+
+Below is a toolboard which shows various creative music AI tools, grouped by category and positioned in relation to their ease of use, human interactivity and the quality of the AI's output. You can zoom in, pan around and click on each tool to explore more – (we recommend switching to full screen mode if you really want to get stuck in.)
+
+---
+
+## Music AI Platform Database
 
 In this spreadsheet, the various AI tools are categorised by use-case and come with contextual descriptions of their differences and focuses – good for comparing services in one area of the industry.
-
 
 | TOOL NAME | WEB LINK | USE CASE | DESCRIPTION |
 | ---- | ---- | ---- | ---- |
@@ -46,7 +45,7 @@ In this spreadsheet, the various AI tools are categorised by use-case and come w
 | LifeScore Music | [lifescoremusic.com](https://www.google.com/url?q=https://www.lifescoremusic.com/&sa=D&source=editors&ust=1705291603098145&usg=AOvVaw1LCqwCQ5Xrd4RZffBaGkRi) | Generative soundscapes | AI-driven music that combines studio-quality compositions with listener-responsive streams for various activities. |
 | Endel | [endel.io](https://www.google.com/url?q=https://endel.io/&sa=D&source=editors&ust=1705291603098263&usg=AOvVaw2vQ66ULAHlKpz48ku79CXC) | Generative soundscapes | Patented adaptive soundscapes using real-time inputs for focus and stress reduction, backed by neuroscience. |
 | AIMI | [aimi.fm](https://www.google.com/url?q=https://www.aimi.fm/&sa=D&source=editors&ust=1705291603098374&usg=AOvVaw2i5EW2MK11Yf6yFbnGNFym) | Generative soundscapes | AI-powered music player and studio offering interactive composition and creative freedom for creators |
-| BandLab SongStarter | [bandlab.comsongstarter](https://www.google.com/url?q=https://www.bandlab.com/songstarter&sa=D&source=editors&ust=1705291603098499&usg=AOvVaw2k4pXcCS1ak5axOo3rSgew) | DIY Production Tools | Generates royalty-free musical ideas like beats and melodies, with integration into BandLab’s DAW |
+| BandLab SongStarter | [bandlab.comsongstarter](https://www.google.com/url?q=https://www.bandlab.com/songstarter&sa=D&source=editors&ust=1705291603098499&usg=AOvVaw2k4pXcCS1ak5axOo3rSgew) | DIY Production Tools | Generates royalty-free musical ideas like beats and melodies, with integration into BandLab's DAW |
 | AIVA | [aiva.ai](https://www.google.com/url?q=https://www.aiva.ai/&sa=D&source=editors&ust=1705291603098617&usg=AOvVaw22_tZw1p7BFiZXb8xoAqib) | DIY Production Tools | AI assistant generating songs in 250+ styles, with a Pro Plan for full copyright ownership |
 | AIBeatz | [aibeatz.com](https://www.google.com/url?q=https://www.aibeatz.com/&sa=D&source=editors&ust=1705291603098733&usg=AOvVaw3f8VKMAARmWQGxLQHqMsGa) | DIY Production Tools | Creates original beats and loops with real-time customization, multiple instruments, and easy export |
 | Strofe | [strofe.comget-started](https://www.google.com/url?q=https://www.strofe.com/get-started&sa=D&source=editors&ust=1705291603098846&usg=AOvVaw2JYJLKNglbkgOw7_lEfTpu) | DIY Production Tools | AI tool for easy music creation suited to video games, Twitch streams, podcasts, with mixing and mastering tools |
@@ -79,5 +78,3 @@ In this spreadsheet, the various AI tools are categorised by use-case and come w
 | XLN XO | [xlnaudio.comproductsxo](https://www.google.com/url?q=https://www.xlnaudio.com/products/xo&sa=D&source=editors&ust=1705291603102357&usg=AOvVaw3c8UGaWFzVU31rks7AhPjD) | Sound & Sample Search | Beat making tool sorting samples by similarity, with a sequencer and sound tuning effects |
 | AIMS API | [https://www.aimsapi.com/](https://www.google.com/url?q=https://www.aimsapi.com/&sa=D&source=editors&ust=1705291603102481&usg=AOvVaw3x1HmEhhRN90BIfZOQlCTE) | Sound & Sample Search | AI music search, tagging and music analysis |
 | Co-Producer | [coproducer.output.com](https://www.google.com/url?q=https://coproducer.output.com/&sa=D&source=editors&ust=1705291603102596&usg=AOvVaw1n1XGaQrm3-XPEN5ttQE3W) | Sound & Sample Search | AI curates, combines and often re-synthesizes samples from own library to generate unique sample packs based on text-prompts |
-
-

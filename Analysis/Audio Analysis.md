@@ -1,60 +1,74 @@
-# Audio Analysis 
+# Audio Analysis
 
 ---
 
 Analyzing audio typically involves a combination of libraries and techniques in Python. Below are some of the most common methods and the Python libraries that are often used to accomplish each type of analysis:
 
-### 1. Acoustic Analysis
+## 1. Acoustic Analysis
+
 - **Librosa**: Provides functions for frequency and harmonic analysis.
 - **SciPy**: Offers signal processing tools for Fourier Transforms and spectral analysis.
 
-### 2. Temporal Analysis
+## 2. Temporal Analysis
+
 - **Wave**: A standard Python library for reading and writing .wav files, useful for waveform analysis.
 - **Audiolazy**: Can be used for real-time audio processing and envelope analysis.
 
-### 3. Statistical Analysis
+## 3. Statistical Analysis
+
 - **NumPy**: Essential for any form of numerical analysis, including computing average energy or RMS.
 - **SciPy**: Again, helpful for more complex statistical measures and signal processing.
 
-### 4. Perceptual Analysis
+## 4. Perceptual Analysis
+
 - **Pyaudio**: Useful for capturing audio for loudness and pitch detection.
 - **Essentia**: Offers tools for perceptual feature extraction, including timbre analysis.
 
-### 5. Spatial Analysis
+## 5. Spatial Analysis
+
 - **AmbiX**: Although not strictly a Python library, it can be interfaced with Python for ambisonics.
 
-### 6. Content Analysis
+## 6. Content Analysis
+
 - **SpeechRecognition**: A Python library that interfaces with various speech recognition APIs.
 - **PyDub**: Can be used in combination with other libraries for content analysis, such as speaker identification.
 
-### 7. Structural Analysis
+## 7. Structural Analysis
+
 - **Music21**: A toolkit for computer-aided musicology, including music genre classification and chord detection.
 - **Madmom**: A library focused on music information retrieval tasks, including beat and rhythm detection.
 
-### 8. Quality Analysis
+## 8. Quality Analysis
+
 - **Wavio**: A Python module that can be used to read and write .wav files and analyze their quality.
 
-### 9. Machine Learning Analysis
+## 9. Machine Learning Analysis
+
 - **Scikit-learn**: Offers a range of algorithms for classification and clustering.
 - **TensorFlow** or **PyTorch**: These libraries are used for more complex machine learning tasks involving neural networks.
 
-### 10. Source Separation
+## 10. Source Separation
+
 - **Spleeter**: A library developed by Deezer for source separation tasks.
 - **Nussl**: A flexible library for source separation that is built on PyTorch.
 
-### 11. Environmental Sound Analysis
+## 11. Environmental Sound Analysis
+
 - **UrbanSound8K**: Not a library, but a dataset that can be used with machine learning libraries to classify urban sounds.
 - **TensorFlow's Audio Recognition**: Can be used for bioacoustic analysis.
 
-### 12. Restoration and Enhancement
+## 12. Restoration and Enhancement
+
 - **Noisereduce**: A Python package for noise reduction.
 - **Audacity**: While not a library, it has a Python scripting interface for audio enhancement and restoration.
 
-### 13. File Analysis
+## 13. File Analysis
+
 - **Mutagen**: A Python module to handle audio metadata.
 - **TinyTag**: A library for reading music metadata of MP3, OGG, FLAC and Wave files.
 
-### 14. Real-time Monitoring and Analysis
+## 14. Real-time Monitoring and Analysis
+
 - **PyAudio**: Provides Python bindings for PortAudio, the cross-platform audio I/O library, and can be used for real-time analysis.
 - **sounddevice**: A module that can provide real-time audio input/output.
 
@@ -70,4 +84,3 @@ To perform audio analysis with these libraries, you would generally follow these
 Each of these libraries requires some setup and learning to use effectively. The Python ecosystem is rich with options, and the best choice depends on the specific requirements of the analysis you intend to perform.
 
 ---
-

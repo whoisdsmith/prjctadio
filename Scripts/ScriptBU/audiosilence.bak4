@@ -1,0 +1,71 @@
+import os
+import shutil
+import logging
+from pydub import AudioSegment
+from pydub.silence import detect_nonsilent
+from tqdm import tqdm
+
+# Configuration
+source_directory = "E:\\Instrumental Library"
+destination_directory = os.path.join(source_directory, "AudioSilence")
+silence_threshold = -50  # Silence threshold in dB
+min_silence_length = 1000  # Minimum length of silence at the beginning of the track in milliseconds
+log_file = "C:\\Users\\whois\\Documents\\prjctadio\\silence_detection.log"
+
+# Set up logging
+logging.basicConfig(filename=log_file, level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+if not os.path.exists(destination_directory):
+    os.makedirs(destination_directory)
+
+def find_files_with_silence(src_dir):
+    silence_files = []
+    all_files = []
+
+    # Walk through all files in the source directory and accumulate .mp3 files
+    for root, dirs, files in os.walk(src_dir):
+        for file in files:
+            if file.lower().endswith('.mp3'):
+                all_files.append(os.path.join(root, file))
+
+    # Process each .mp3 file with a progress bar
+    for file in tqdm(all_files, desc="Analyzing MP3 files", unit="file"):
+        try:
+            # Load the audio file
+            audio = AudioSegment.from_file(file, format="mp3")
+            
+            # Check for non-silent parts
+            nonsilent_parts = detect_nonsilent(audio, min_silence_len=min_silence_length, silence_thresh=silence_threshold)
+            # If the first non-silent part starts after 0, there's silence at the beginning
+            if nonsilent_parts and nonsilent_parts[0][0] > 0:
+                silence_files.append(file)
+        except Exception as e:
+            logging.error(f"Error processing {file}: {e}")
+
+    return silence_files
+
+def move_files(files, dst_dir):
+    for file in tqdm(files, desc="Moving files with silence", unit="file"):
+        try:
+            # Define the new path for the file
+            dst_path = os.path.join(dst_dir, os.path.basename(file))
+            # Move the file
+            shutil.move(file, dst_path)
+            logging.info(f"Moved: {file} -> {dst_path}")
+        except Exception as e:
+            logging.error(f"Error moving {file}: {e}")
+
+# Start the process
+logging.info("Starting to scan for silence in MP3 files.")
+
+# Find all files with silence at the beginning
+files_with_silence = find_files_with_silence(source_directory)
+
+# Log the number of files with silence detected
+logging.info(f"Detected {len(files_with_silence)} files with silence at the beginning.")
+
+# Move the detected files to the new folder
+move_files(files_with_silence, destination_directory)
+
+logging.info("Scan and move complete.")

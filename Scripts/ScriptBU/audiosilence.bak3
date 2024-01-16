@@ -1,0 +1,72 @@
+import os
+import shutil
+import logging
+from pydub import AudioSegment
+from pydub.silence import detect_nonsilent
+from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor
+
+# Configuration
+source_directory = "E:\\Instrumental Library"
+destination_directory = os.path.join(source_directory, "AudioSilence")
+silence_threshold = -50  # Silence threshold in dB
+min_silence_length = 1000  # Minimum length of silence at the beginning of the track in milliseconds
+log_file = "E:\\Instrumental Library\\silence_detection.log"
+max_workers = 4  # Maximum number of threads to use
+
+# Set up logging
+logging.basicConfig(filename=log_file, level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+if not os.path.exists(destination_directory):
+    os.makedirs(destination_directory)
+
+def analyze_file(file):
+    try:
+        # Load the audio file
+        audio = AudioSegment.from_file(file, format="mp3")
+        
+        # Check for non-silent parts
+        nonsilent_parts = detect_nonsilent(audio, min_silence_len=min_silence_length, silence_thresh=silence_threshold)
+        
+        # If the first non-silent part starts after 0, there's silence at the beginning
+        if nonsilent_parts and nonsilent_parts[0][0] > 0:
+            return file
+    except Exception as e:
+        logging.error(f"Error processing {file}: {e}")
+    return None
+
+def move_file(file, dst_dir):
+    try:
+        # Define the new path for the file
+        dst_path = os.path.join(dst_dir, os.path.basename(file))
+        # Move the file
+        shutil.move(file, dst_path)
+        logging.info(f"Moved: {file} -> {dst_path}")
+    except Exception as e:
+        logging.error(f"Error moving {file}: {e}")
+
+def scan_and_process_files(src_dir, dst_dir):
+    files_to_move = []
+    all_files = [os.path.join(root, file)
+                 for root, _, files in os.walk(src_dir)
+                 for file in files if file.lower().endswith('.mp3')]
+
+    # Analyzing files using multithreading
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        for result in tqdm(executor.map(analyze_file, all_files), total=len(all_files), desc="Analyzing MP3 files", unit="file"):
+            if result is not None:
+                files_to_move.append(result)
+
+    # Move files with detected silence
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        for _ in tqdm(executor.map(lambda f: move_file(f, dst_dir), files_to_move), total=len(files_to_move), desc="Moving files with silence", unit="file"):
+            pass
+
+# Start the process
+logging.info("Starting to scan for silence in MP3 files.")
+
+# Scan for files and process them
+scan_and_process_files(source_directory, destination_directory)
+
+logging.info("Scan and move complete.")
