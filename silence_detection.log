@@ -9,3 +9,11 @@
 2024-01-16 10:35:55,111 - INFO - No action required for None or file analysis failed.
 2024-01-16 10:36:04,407 - INFO - No action required for None or file analysis failed.
 2024-01-16 10:36:04,407 - INFO - Scan and move complete.
+2024-01-16 11:23:30,697 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
+2024-01-16 11:23:30,761 - INFO - No action required for None (file moved or no silence detected).
+2024-01-16 11:23:50,595 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
+2024-01-16 11:23:50,674 - INFO - No action required for None (file moved or no silence detected).
+2024-01-16 11:24:31,315 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
+2024-01-16 11:24:31,332 - INFO - No action required for None (file moved or no silence detected).
+2024-01-16 11:24:44,494 - ERROR - Error moving None: expected str, bytes or os.PathLike object, not NoneType
+2024-01-16 11:24:44,494 - INFO - No action required for None (file moved or no silence detected).
