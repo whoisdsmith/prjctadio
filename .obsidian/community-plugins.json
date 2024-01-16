@@ -11,5 +11,10 @@
   "advanced-merger",
   "obsidian-heading-shifter",
   "obsidian-linter",
-  "obsidian-enhancing-export"
+  "obsidian-enhancing-export",
+  "vscode-editor",
+  "open-vscode",
+  "copy-inline-code",
+  "obsidian-style-settings",
+  "theme-picker"
 ]

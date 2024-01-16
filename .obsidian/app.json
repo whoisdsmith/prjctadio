@@ -8,5 +8,9 @@
     "landscape": false,
     "margin": "0",
     "downscalePercent": 60
-  }
+  },
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./",
+  "promptDelete": false
 }

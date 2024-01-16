@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "October Forever.md",
-                "mode": "preview",
+                "file": "Resources/PythonInMusic.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Resources/PythonInMusic.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Resources/PythonInMusic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,12 +125,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Music AI in 2023.md"
+                "file": "Resources/PythonInMusic.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,13 +144,30 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "notes-merger:Notes Merger": false
+      "notes-merger:Notes Merger": false,
+      "vscode-editor:Create Code File": false,
+      "open-vscode:VSCode": false
     }
   },
   "active": "7ba07bf8bb4f4bf2",
   "lastOpenFiles": [
+    "Resources",
+    "Resources/Python for Scientific Audio.md",
+    "Resources/PythonInMusic.md",
+    "PythonInMusic.md.crdownload",
+    "Scripts/audio_analysis_and_organization.md",
+    "Development/ProjectAudio Development.md",
+    "ProjectAudioOrgChart.md",
+    "ProjectAudio Projects.md",
+    "Development/ProjectAudio.md",
+    "Articles/Music AI in 2023.md",
+    "Articles",
+    "Development/Audiotrim.md",
+    "Analysis/Audio Analysis.md",
+    "Development",
+    "Scripts",
+    "Analysis",
     "October Forever.md",
-    "Music AI in 2023.md",
     "The Sky Seems Closer.md",
     "Skeptic.md",
     "Skeletons.md",
@@ -165,24 +183,9 @@
     "Albums/Singles.md",
     "Albums/Skeptic.md",
     "Albums/The Sky Seems Closer.md",
-    "Albums/Skeletons.md",
-    "Albums/Side Mirror.md",
-    "Albums/October Forever.md",
-    "Albums/Night Terrors.md",
-    "Albums/Into The Past.md",
-    "Albums/Epilogues II.md",
-    "The Sky Seems Closer-merged.md",
-    "Into The Past/Into The Past Album.md",
-    "Epilogues II/Epilogues II Album.md",
-    "Epilogues/456.md",
     "Misc",
     "Skeptic",
     "Skeletons",
-    "Side Mirror",
-    "October Forever",
-    "Night Terrors",
-    "Into The Past",
-    "Epilogues II",
-    "Epilogues"
+    "Side Mirror"
   ]
 }
